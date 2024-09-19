@@ -1,0 +1,42 @@
+.new-task-modal {
+  width: 450px;
+  height: 286px;
+  background-color: #fff;
+  box-shadow: 0 24px 48px -12px rgba(16, 24, 40, 0.18);
+  border-radius: 16px;
+  padding: 32px;
+  letter-spacing: -0.48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.04px;
+  }
+
+  input {
+    width: 386px;
+    border: 1px solid #d7dde9;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 8px;
+    outline-color: #c7c7c7;
+
+    &::placeholder {
+      opacity: 56%;
+    }
+  }
+
+  .div-buttons {
+    display: flex;
+    gap: 16px;
+  }
+}

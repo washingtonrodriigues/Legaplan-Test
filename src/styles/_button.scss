@@ -1,0 +1,29 @@
+@mixin button($bg-from, $bg-to, $color) {
+  background-image: linear-gradient(to right, $bg-from, $bg-to);
+  color: $color;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-size: 16px;
+  letter-spacing: -0.48px;
+  cursor: pointer;
+}
+
+.add-new-task {
+  @include button(#0796d3, #53c0f0, #fff);
+  width: 450px;
+  margin-top: 24px;
+  font-weight: 500;
+}
+
+.cancel-task {
+  @include button(#e7eefb, #e7eefb, #000);
+  font-weight: 400;
+  width: 185px;
+}
+
+.add-task {
+  @include button(#0796d3, #53c0f0, #fff);
+  font-weight: 500;
+  width: 185px;
+}
