@@ -4,7 +4,13 @@ import '@/styles/_newTaskModal.scss';
 import Button from './ui/button';
 import { useState } from 'react';
 
-const NewTaskModal = ({ onCancel }: { onCancel: () => void }) => {
+const NewTaskModal = ({
+  onCancel,
+  onSave,
+}: {
+  onSave: (task: string) => void;
+  onCancel: () => void;
+}) => {
   const [task, setTask] = useState('');
 
   const handleSaveTask = () => {
@@ -14,6 +20,7 @@ const NewTaskModal = ({ onCancel }: { onCancel: () => void }) => {
 
     localStorage.setItem('tasks', JSON.stringify(updatedTasks));
 
+    onSave(task);
     setTask('');
     onCancel();
   };
@@ -28,6 +35,7 @@ const NewTaskModal = ({ onCancel }: { onCancel: () => void }) => {
           onChange={(ev) => setTask(ev.target.value)}
           type="text"
           placeholder="Digite"
+          autoFocus
         />
       </div>
       <div className="div-buttons">
