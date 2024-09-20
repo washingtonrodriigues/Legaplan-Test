@@ -14,7 +14,7 @@ A simple and intuitive task list application built with Next.js. This project al
 
 ## Screenshots
 
-![Task List Screenshot](path_to_screenshot.png)
+![Task List Screenshot](public/taskslistapp.png)
 
 ## Getting Started
 
@@ -37,11 +37,21 @@ Make sure you have the following installed:
 
 2. Install dependencies:
 
-   npm install or yarn install
+   ```bash
+   npm install
+   ```
+
+   or
+
+   ```bash
+   yarn install
+   ```
 
 3. Run the application localy
 
+   ```bash
    npm run dev
+   ```
 
 ### Final considerations
 
