@@ -37,11 +37,21 @@ Make sure you have the following installed:
 
 2. Install dependencies:
 
-   npm install or yarn install
+   ```bash
+   npm install
+   ```
+
+   or
+
+   ```bash
+   yarn install
+   ```
 
 3. Run the application localy
 
+   ```bash
    npm run dev
+   ```
 
 ### Final considerations
 
