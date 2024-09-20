@@ -14,7 +14,7 @@ A simple and intuitive task list application built with Next.js. This project al
 
 ## Screenshots
 
-![Task List Screenshot](path_to_screenshot.png)
+![Task List Screenshot](public/taskslistapp.png)
 
 ## Getting Started
 
