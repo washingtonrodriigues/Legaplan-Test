@@ -32,11 +32,31 @@
 
     &::placeholder {
       opacity: 56%;
+      font-size: 16px;
+      line-height: 19.36px;
+      letter-spacing: -0.48px;
     }
   }
 
   .div-buttons {
     display: flex;
     gap: 16px;
+  }
+}
+
+@media (320px <= width <= 780px) {
+  .new-task-modal {
+    width: 100vw;
+    height: 100vh;
+    padding: 24px;
+    justify-content: start;
+
+    input {
+      width: 272px;
+    }
+
+    .div-buttons {
+      flex-direction: column-reverse;
+    }
   }
 }
