@@ -1,0 +1,30 @@
+@import './newTaskModal';
+
+.delete-task-modal {
+  @extend .new-task-modal;
+  height: 232px;
+
+  h2 {
+    font-size: 24px;
+    line-height: 29.04px;
+    opacity: 1;
+  }
+
+  p {
+    opacity: 54%;
+    line-height: 24px;
+  }
+}
+
+@media (320px <= width <= 780px) {
+  .delete-task-modal {
+    width: 100vw;
+    height: 100vh;
+    padding: 24px;
+    justify-content: start;
+
+    .div-buttons {
+      flex-direction: column-reverse;
+    }
+  }
+}
